@@ -1,0 +1,329 @@
+@media only screen and (max-width: 1300px) {
+
+    #slideshow{
+    background-attachment: local;
+    }
+    
+    #adminslideshow{
+    background-attachment: local;
+    }
+
+    
+}
+
+@media only screen and (max-width: 950px) {
+
+}
+
+@media only screen and (max-width: 800px) {
+    .heroText {
+        font-size: 300%;
+        padding: 10px;
+        padding-left: 40px;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .panelThumb{
+        height: 150px;
+        width: 200px;
+        margin-right: 20px;
+        margin-left: 0px;
+    }
+    
+    .article-title{
+        font-size: 110%;
+        padding-bottom: 10px;
+    }
+    
+    article h4{
+        font-size: 80%;
+        font-weight: 700;
+        line-height: 20px;
+        margin-top: 10px;
+    }
+    
+     .social{
+        text-align: center;
+    }
+    
+    .links{
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .travelInfo{
+        text-align: center;
+        font-size: 80%;
+        font-weight: 700;
+    }
+    
+    .headline{
+        text-align: center;
+    }
+    
+    .location{
+        margin: 0px;
+    }
+    
+    .tinfoHead{
+        text-align: center;
+    }
+    
+    .ticText{
+        margin-top: 20px;
+    }
+}   
+   
+
+@media only screen and (max-width: 700px) {
+    .heroText {
+        font-size: 300%;
+    }
+    
+    
+    .price{
+        display: block;
+    }
+    
+    .special{
+        display: block;
+    }
+    
+    .purchase{
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    
+}
+    
+@media only screen and (max-width: 625px) {
+    .heroText{
+        font-size: 220%;
+    }
+    
+    article h4{
+        display: none;
+    }
+    
+    .article-title{
+        font-size: 120%
+    }
+    
+    .ticText{
+        margin-top: 20px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 580px) {
+    .price{
+        text-align: center;
+    }
+    
+    .special{
+        text-align: center;
+    }
+    
+    .ticDesc .article-title{
+        text-align: center;
+    }
+    
+
+}
+
+@media only screen and (max-height: 500px) {
+    
+}
+    
+@media only screen and (max-width: 480px) {
+
+    .heroText {
+        font-size: 200%;
+        font-weight: 700;
+        width: 100%;
+        text-align: center;
+        line-height: 60px;
+        }
+    
+    .btn{
+        float: none;
+        width: 100% !important;
+    }
+    
+    .article-title{
+        font-size: 80%;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: -50px;
+    }
+    
+    #ticBtn,
+    #logoutBtn{
+        position: relative;
+        width: 100vw !important;
+        right: 20px;
+        
+    }
+    
+    .ticFormTitle{
+        margin-bottom: 20px;
+        font-size: 110%;
+    }
+    
+    article{
+        position: relative;
+        top: 20px;
+    }
+    
+    .dates{
+        display: none !important;
+    }
+    
+    .panelThumb{
+        float: none;
+        position: relative;
+        width: 100%;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    
+    .articleImgRight,
+    .articleImgLeft {
+        float: none;
+        width: 100%;
+        margin: 0px;
+        height: 200px;
+    }
+    
+    .purchase{
+        margin-top: 25px !important;
+    }
+    
+    .dates {
+    position: relative; 
+    top: -5px; 
+    text-align: center;
+    }
+    
+    .fieldTitle{
+    font-size: 80%;
+    }
+    
+    .socialIcon{
+        width: 100% !important;
+    }
+    
+    #guide:link,
+    #guide:visited{
+    color: #ff0000 !important;
+    text-decoration: none !important;
+    font-weight: 700;
+    font-size: 110%;
+    transition: color 0.2s;
+    }
+
+    #guide:hover,
+    #guide:active{
+    text-decoration: none !important;
+    color: #aa0000 !important; 
+    }
+    
+    #map:link,
+    #map:visited{
+    font-weight: 700;
+    font-size: 105%;
+    color: #000 !important;
+    text-decoration: none !important;
+    transition: color 0.2s;
+    }
+
+    #map:hover,
+    #map:active{
+    text-decoration: none !important;
+    color: #0006a0 !important;
+    }
+    
+    .ticText{
+        margin-top: 20px;
+    }
+    
+    .ticText .article-title{
+        margin-bottom: -20px;
+        text-align: center;
+    }
+    
+    .ticText .price{
+        margin-top: -20px;
+    }
+    
+    .ticText .special{
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+    
+}
+
+@media only screen and (max-width: 400px) {
+     .ticText{
+        margin-top: 20px;
+    }
+    
+    .ticText .article-title{
+        margin-bottom: -20px;
+        text-align: center;
+    }
+    
+    .ticText .price{
+        margin-top: -20px;
+    }
+    
+    .ticText .special{
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 304px) {
+
+    .heroText {
+        font-size: 200%;
+        font-weight: 700;
+        width: 100%;
+        text-align: center;
+        line-height: 40px;
+    }
+    
+    .btn{
+        float: none;
+        width: 100% !important;
+    }
+    
+    .adminInfo{
+        font-size: 80%
+    }
+}
+
+@media only screen and (max-height: 250px) {
+
+    .heroText {
+        font-size: 200%;
+        font-weight: 700;
+        width: 100%;
+        text-align: center;
+        line-height: 31px;
+        padding: 10px;
+    }
+    
+    .subTxt{
+    font-size: 40%;
+    font-weight: 700;
+    padding: 2px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    }
+}
+

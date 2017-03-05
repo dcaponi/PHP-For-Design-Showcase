@@ -1,0 +1,648 @@
+/*Eric Meyer's CSS Reset*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: Oxygen, sans-serif;
+    overflow-x: auto;
+    padding: 0px !important;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    background-color: #e0dcdc;
+    color: #555;
+    font-family: 'Oxygen', 'Arial', sans-serif;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.clearfix {zoom:1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.btn{display: block;}
+
+.modal-header i {
+    font-size: 150%;
+    color: #000;
+}
+
+.modal-footer{
+    text-align: left; 
+}
+
+.modal-footer p {
+    clear: right;
+    overflow: auto;
+    
+}
+/*---------------------- END CSS RESET / BEGIN STYLING -------------------------------*/
+
+
+/*---------------------- HEADER AND HERO IMAGE ---------------------------------------*/
+
+#slideshow{
+    background-image: url();
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+    background-attachment: fixed;
+    height: 500px; 
+    color: #fff !important;
+}
+
+#adminslideshow{
+    background-image: url(../Images/mosaic/mosbluebg.jpg);
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+    background-attachment: fixed;
+    height: 500px; 
+    color: #fff !important;
+}
+
+#slideshow a{
+    color: #fff;
+    transition: color 0.2s;
+}
+
+#slideshow a:hover{
+    text-decoration: none; 
+    color: #ffe200;
+}
+
+#adminslideshow a{
+    color: #fff;
+    transition: color 0.2s;
+}
+
+#adminslideshow a:hover{
+    text-decoration: none !important; 
+    color: #ffe200 !important;
+}
+
+.heroText{
+    font-size: 400%;
+    font-weight: 300;
+    position: relative;
+    top: 20px;
+    color: #dbdbdb;
+    padding: 20px;
+    padding-left: 75px;
+    width: 800px;
+    background-color: rgba(0, 0, 0, 0.76);
+    overflow: auto;
+    transition: color 0.4s !important;
+}
+
+.heroText:hover{color: rgba(255, 232, 49, 0.85) !important;}
+
+.subTxt{
+    font-size: 40%;
+    font-weight: 700;
+    padding: 20px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+/*-------------------- END HEADER AND HERO IMAGE --------------------------------------*/
+
+/*------------------------------- TABS ------------------------------------------------*/
+
+.menuTabs{background-color: #414141;}
+
+.menuTabs a {color: #fff;}
+
+.menu ul li a:hover{background-color: #505050;}
+
+.menu ul #newsTab.active a,
+.menu ul #geoTab.active a,
+.menu ul #villageTab.active a{
+    background-color: #2546ff !important;
+}
+
+/*----------------------------- END TABS ---------------------------------------------*/
+
+/*----------------------------- PANELS -----------------------------------------------*/
+
+.panelThumb{
+    height: 200px;
+    width: 250px;
+    float: left;
+    clear: none;
+    margin: 0px 30px;
+    transform: scale(1.05);
+    transition: transform 0.5s;
+}
+
+.panelThumb:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.ticThumb{
+    width: 100%;
+}
+
+article{
+    margin-bottom: 10px;
+}
+
+.article-container,
+.tic-container{
+    overflow: auto;
+    padding: 30px 20px;
+    margin-bottom: 25px;
+    background-color: #fff;
+    position: relative;
+    top: 20px;
+    box-shadow: none;
+    transition: box-shadow 0.2s;
+}
+
+.article-container:hover{
+    box-shadow: 5px 5px 10px rgb(105, 102, 93);
+}
+
+.article-title{
+    font-size: 140%;
+    padding-bottom: 20px;
+    margin-top: -5px;
+}
+
+.tic-title{
+    margin-left: 250px;
+}
+
+
+.tab-content{
+    background-color: #e0dcdc;
+    padding: 10px 20px;
+}
+
+.readMore{
+    float: right;
+}
+
+article{
+    line-height: 30px;
+    font-size: 90%;
+}
+
+.articleImg{
+    height: 200px;
+}
+
+.articleImgRight{
+    float: right;
+    clear: left;
+    margin-left: 20px;
+}
+
+.articleImgLeft{
+    float: left;
+    clear: right;
+    margin-right: 20px;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+h4{font-style: italic;}
+/*--------------------------- END PANELS ---------------------------------------------*/
+
+/*------------------------------- FOOTER ---------------------------------------------*/
+.location{
+    padding: 20px;
+    margin: 5px;
+    margin-top: 20px;
+    overflow: hidden;  
+}
+
+.travelInfo{
+    padding: 0px;
+    line-height: 40px;
+    width: 100%;
+}
+
+
+.tix2{
+    margin: 20px 0px;
+    margin-top: -5px;
+}
+
+.socialIcon{
+    font-size: 300% !important;
+    color: rgb(103, 103, 106);
+    transition: color 0.2s;
+}
+
+.fa-weibo:hover{color: #bb0000}
+
+.fa-weixin:hover{color: #7bb32e}
+
+.social{text-align: right;}
+
+.socialTitle{
+    font-size: 150%;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+#guide:link,
+#guide:visited{
+    color: #ff0000 !important;
+    text-decoration: none !important;
+    font-weight: 700;
+    font-size: 110%;
+    transition: color 0.2s, font-size 0.2s;
+}
+
+#guide:hover,
+#guide:active{
+    text-decoration: none !important;
+    font-size: 130%;
+}
+
+.tab-pane{line-height: 30px;}
+
+.tab-pane ul li{margin-top: 10px;}
+
+#general ul li .fa-info{color: #2546ff}
+
+#health ul li .fa-heartbeat{color: #ff0000}
+
+#etiquette ul li .fa-leaf{color: #00a200}
+
+#gen{color: #2546ff;}
+
+#hlt{color: #ff0000;}
+
+#etq{color: #00a200;}
+
+.nav-pills .active a{color: #fff !important;}
+
+.infoTabs ul #genInfo.active a{background-color: #2929ff !important;}
+
+.infoTabs ul #healthInfo.active a{background-color: #ff0000 !important;}
+
+.infoTabs ul #etInfo.active a{background-color: #00a200 !important;}
+
+.info{
+    padding: 20px;
+    line-height: 30px;
+}
+.headline{
+    font-size: 175%;
+    line-height: 45px;
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
+.caveFacts{
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+#hours,
+#priceC,
+#priceU{
+    display: inline-block;
+    margin-left: 5px;
+}
+
+
+.tix2{
+    font-size: 110%;
+    font-weight: 700;
+    background-color: rgb(103, 103, 106);
+    width: 100% !important;
+}
+
+
+.tix2 a{color: #ffffff;}
+
+.tix2:link,
+.tix2:visited{
+    transition: background-color 0.2s, color 0.2s;
+    color: #fff; !important
+}
+
+.tix2:hover{
+    background-color: rgb(57, 57, 57) !important;
+    color: #ffe200;!important;  
+}
+
+#map:link,
+#map:visited{
+    color: #000 !important;
+    text-decoration: none !important;
+    transition: color 0.2s, font-size 0.2s;
+}
+
+#map:hover,
+#map:active{
+    text-decoration: none !important;
+    font-size: 120%;
+}
+
+.map-photo-modal .mapPic{
+    height: 400px;
+    width: 100%;
+}
+
+.collapsable:link,
+.collapsable:visited{color: inherit !important;}
+
+.collapsable:hover,
+.collapsable:active,
+.collapsable:focus{text-decoration: none !important;}
+
+.modalTab{background-color: #fff !important;}
+
+.modal-title{
+    font-size: 150%;
+    text-align: center;
+    font-weight: 300;
+    font-style: normal;
+}
+
+hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.fa-tripadvisor:hover{color: #589442;}
+
+.fa-youtube-play:hover{color: #cd201f;}
+
+.fa-star{color: #D4AF37;}
+
+.fa-fire{color: #9C2A00;}
+
+.social,
+.extInfo{
+    text-align: right;
+}
+
+/*--------------------------- END FOOTER ---------------------------------------------*/
+
+/*--------------------------- ADMIN LOGIN --------------------------------------------*/
+
+.loginbloc{
+    margin-top: 0px;
+    width: 50%;
+    left: 25%;
+    top: -70px;
+}
+
+.infobloc{
+    margin-top: 0px;
+    width: 90%;
+    left: 5%;
+    top: 25px;
+}
+
+.loginbody{background-color: #e0dcdc;}
+
+/*--------------------------- END ADMIN LOGIN  ---------------------------------------*/
+
+/*--------------------------- ADMIN PORTAL -------------------------------------------*/
+
+.fieldTitle{
+    margin-bottom: 15px;
+    margin-top: 10px;
+    font-size: 110%;
+    font-weight: 700;
+    
+}
+
+.adminInfo{margin: 10px 0px;}
+
+.adminInfo a{margin: 5px 0px !important;}
+
+.adminInfo a:link,
+.adminInfo a:visited{
+    font-size: 70%;
+    text-decoration: none;
+    color: #000;
+}
+
+.adminInfo a:hover,
+.adminInfo a:active{
+    text-decoration: none;
+    color: #000;
+    
+}
+
+.editbtn,
+.deletebtn{
+    float: right;
+    margin: 5px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 80%;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.deletebtn{
+    background-color: #ff0000 !important;
+}
+
+.editbtn{background-color: #0000ff !important;}
+
+.editContainer{overflow: auto !important;}
+
+.deletebtn:visited,
+.deletebtn:active,
+.deletebtn:focus{
+    background-color: #ff0000 !important;
+    color: #fff !important;
+}
+
+.editbtn:visited,
+.editbtn:active,
+.editbtn:focus{
+    background-color: #0000ff !important;
+    color: #fff !important;
+}
+
+.deletebtn:hover,
+.deletebtn:active{
+    color: #ff0000 !important;
+    background-color: #fff !important;
+}
+
+.editbtn:hover,
+.editbtn:active{
+    color: #0000ff !important;
+    background-color: #fff !important;
+}
+
+.dates {margin: 10px 0px;}
+
+button .addmore{
+    float: right !important;
+    clear: both !important;
+    font-size: 120%;
+}
+
+#logoutBtn,
+#ticBtn
+{
+    float: left;
+    position: relative;
+    top: 20px;
+    margin: 20px 20px;
+    background-color:  rgb(62, 62, 62);
+    color: #fff;
+    border: none;
+    font-weight: 700;
+    font-size: 110%;
+    border: solid 1px #a3a3a3;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+#logoutBtn:active,
+#ticBtn:active{
+    background-color: rgb(62, 62, 62) !important;
+    color: #fff;
+    border: none;
+    margin: 20px;
+    font-weight: 700;
+    font-size: 110%;
+    border: solid 1px #a3a3a3;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+#logoutBtn:focus,
+#ticBtn:focus{
+    background-color:  rgb(62, 62, 62);
+    color: #fff;
+    border: none;
+    margin: 20px;
+    font-weight: 700;
+    font-size: 110%;
+    border: solid 1px #a3a3a3;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+
+#logoutBtn:visited,
+#ticBtn:visited{
+    background-color: rgb(62, 62, 62) !important;
+    color: #fff;
+    border: none;
+    margin: 20px;
+    font-weight: 700;
+    font-size: 110%;
+    border: solid 1px #a3a3a3;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+#logoutBtn:hover,
+#ticBtn:hover{
+    background-color:  rgb(96, 96, 96);
+    color: #ffe200;!important;
+}
+
+.purchase{
+    background-color:  rgb(62, 62, 62);
+    color: #fff;
+    margin-top: 10px;
+    border: none;
+    font-weight: 700;
+    font-size: 110%;
+    border: solid 1px #a3a3a3;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.purchase:active,
+.purchase:active{
+    background-color: rgb(62, 62, 62) !important;
+    color: #fff;
+    border: none;
+}
+
+.purchase:focus,
+.purchase:focus{
+    background-color:  rgb(62, 62, 62);
+    color: #fff;
+    border: none;
+}
+
+
+.purchase:visited,
+.purchase:visited{
+    background-color: rgb(62, 62, 62) !important;
+    color: #fff;
+    border: none;
+}
+
+.purchase:hover,
+.purchase:hover{
+    background-color:  rgb(96, 96, 96);
+    color: #ffe200;!important;
+}
+
+

@@ -1,0 +1,503 @@
+/*Eric Meyer's CSS Reset*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: Oxygen, sans-serif;
+    overflow-x: auto;
+    padding: 0px !important;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    background-color: #e0dcdc;
+    color: #555;
+    font-family: 'Oxygen', 'Arial', sans-serif;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.clearfix {zoom:1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.btn{
+    display: block;
+}
+
+.modal-header i {
+    font-size: 150%;
+    color: #000;
+}
+
+.modal-footer{
+    text-align: left; 
+}
+
+.modal-footer p {
+    clear: right;
+    overflow: auto;
+    
+}
+/*---------------------- END CSS RESET / BEGIN STYLING -------------------------------*/
+
+
+/*---------------------- HEADER AND HERO IMAGE ---------------------------------------*/
+
+header {
+    height: 1000px;
+}
+
+#slideshow{
+    background-image: url();
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.heroText{
+    font-size: 400%;
+    font-weight: 300;
+    position: relative;
+    top: -50px;
+    color: #dbdbdb;
+    margin: 50px 50px 0px 0px;
+    padding: 20px;
+    padding-left: 75px;
+    width: 800px;
+    background-color: rgba(0, 0, 0, 0.76);
+    overflow: auto;
+}
+
+.zoomScroll,
+.ghostScroll {
+    font-weight: 700;
+    float: left;
+    clear: right;
+    border: none;
+    width: 33.3%;
+    border-radius: 0px;
+    color: #ffffff;
+    height: 40px;
+    font-size: 110%
+}
+
+.ghostScroll:link,
+.ghostScroll:visited{
+    background-color: rgba(3, 3, 3, 0.25);
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.btn:hover{
+    background-color: rgba(70, 66, 66, 0.5) !important;
+    color: #ffe200;
+}
+
+#banner{
+    background-color: rgba(25, 25, 25, 0.75);
+    z-index: 500;
+    overflow: auto;
+    position: relative;
+    top: 85vh;
+}
+
+.subTxt{
+    font-size: 40%;
+    font-weight: 700;
+    padding: 20px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.btn{
+    text-align: center;
+    line-height: 100%;
+    border-radius: 0px;
+}
+
+
+
+/*--------------------------- INTRODUCTION -------------------------------------------*/
+
+.info{
+    padding: 20px;
+    line-height: 30px;
+}
+.headline{
+    font-size: 175%;
+    line-height: 45px;
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
+.caveFacts{
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+#hours,
+#priceC,
+#priceU{
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.tix,
+.tix2{
+    margin-top: 50px;
+    font-size: 110%;
+    font-weight: 700;
+    background-color: rgb(103, 103, 106);
+    width: 100% !important;
+}
+
+.tix a,
+.tix2 a{
+    color: #ffffff;
+}
+
+.tix:link,
+.tix:visited,
+.tix2:link,
+.tix2:visited{
+    transition: background-color 0.2s, color 0.2s;
+    color: #fff; !important
+}
+
+.tix:hover,
+.tix2:hover{
+    background-color: rgb(57, 57, 57) !important;
+    color: #ffe200;!important
+    
+}
+/*---------------------------- MOSAIC --------------------------------------------*/
+
+.mosaic {
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+.mosaic-showcase {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+    
+.mosaic-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.mosaic-photo img {
+    opacity: 0.7;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s;
+}
+
+.mosaic-photo img:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+.mosaic-photo-modal img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: auto;
+}
+
+.showMe{
+    display: none;
+}
+
+#morepix{
+    background-color: rgb(103, 103, 106);
+    color: #fff;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+#morepix:hover{
+    background-color: rgb(65, 62, 85) !important;
+    color: #ffe200;!important
+}
+
+.next .modalNavN{
+    color: #fff;
+    float: right;
+}
+
+.back .modalNavB{
+    color: #fff;
+}
+.modalNav{
+    margin-top: 20px;
+    font-size: 110%;
+    font-weight: 700;
+    background-color: rgb(103, 103, 106) !important;
+    width: 50% !important;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.modalNav:link,
+.modalNav:visited,
+.modalNav:active{
+    transition: background-color 0.2s, color 0.2s;
+    color: #fff; !important
+}
+
+.modalNav:hover{
+    color: #ffe200;!important
+}
+
+.mosLink{
+    font-size: 250% !important;
+    float: right;
+    padding: 10px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.mosLink:link,
+.mosLink:visited,
+.mosLink:active{
+    transition: background-color 0.2s, color 0.2s;
+    color: #fff; !important
+}
+
+.mosLink:hover{
+    color: #ffe200;!important
+}
+
+.modal-title{
+    font-size: 150%;
+    text-align: center;
+    font-weight: 300;
+}
+/*------------------------------ NEWS ------------------------------------------------*/
+
+
+
+/*------------------------------ LOCATION --------------------------------------------*/
+
+.location{
+    padding: 20px;
+    margin: 5px;
+    overflow: hidden;
+}
+
+
+.travelInfo{
+    padding: 0px;
+    line-height: 40px;
+    width: 100%;
+}
+
+
+.tix2{
+    margin: 20px 0px;
+    margin-top: -5px;
+}
+
+.socialIcon{
+    font-size: 300% !important;
+    color: rgb(103, 103, 106);
+    transition: color 0.2s;
+}
+
+.fa-weibo:hover{
+    color: #bb0000
+}
+
+.fa-weixin:hover{
+    color: #7bb32e
+}
+
+.fa-tripadvisor:hover{
+    color: #589442
+}
+
+.fa-youtube-play:hover{
+    color: #cd201f
+}
+
+.social,
+.extInfo{
+    text-align: right;
+}
+
+.socialTitle{
+    font-size: 150%;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+#guide:link,
+#guide:visited{
+    color: #ff0000 !important;
+    text-decoration: none !important;
+    font-weight: 700;
+    font-size: 110%;
+    transition: color 0.2s, font-size 0.2s;
+}
+
+#guide:hover,
+#guide:active{
+    text-decoration: none !important;
+    font-size: 130%;
+}
+
+.tab-pane{
+    line-height: 30px;
+}
+
+.tab-pane ul li{
+    margin-top: 10px;
+}
+
+#general ul li .fa-info{
+    color: #2546ff
+}
+
+#health ul li .fa-heartbeat{
+    color: #ff0000
+}
+
+#etiquette ul li .fa-leaf{
+    color: #00a200
+}
+
+#gen{
+    color: #2546ff;
+}
+
+#hlt{
+    color: #ff0000;
+}
+
+#etq{
+    color: #00a200;
+}
+
+.nav-pills .active a{
+    color: #fff !important;
+}
+
+.infoTabs ul #genInfo.active a{
+    background-color: #2929ff !important;
+}
+
+.infoTabs ul #healthInfo.active a{
+    background-color: #ff0000 !important;
+}
+
+.infoTabs ul #etInfo.active a{
+    background-color: #00a200 !important;
+}
+
+hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+#map:link,
+#map:visited{
+    color: #000 !important;
+    text-decoration: none !important;
+    transition: color 0.2s, font-size 0.2s;
+}
+
+#map:hover,
+#map:active{
+    text-decoration: none !important;
+    font-size: 120%;
+}
+
+.map-photo-modal .mapPic{
+    height: 400px;
+    width: 100%;
+}
+
+.adminInfo{
+    margin: 10px 0px;
+}
+
+.adminInfo a{
+    margin: 5px 0px !important;
+}
+
+.adminInfo a:link,
+.adminInfo a:visited{
+    font-size: 70%;
+    text-decoration: none;
+    color: #000;
+}
+
+.adminInfo a:hover,
+.adminInfo a:active{
+    text-decoration: none;
+    color: #000;
+    
+}

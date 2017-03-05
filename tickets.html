@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]> <html lang="en" class="ie ie6 lte9 lte8 lte7 os-win"> <![endif]-->
+<!--[if IE 7]> <html lang="en" class="ie ie7 lte9 lte8 lte7 os-win"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="ie ie8 lte9 lte8 os-win"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie ie9 lte9 os-win"> <![endif]-->
+<!--[if gt IE 9]> <html lang="en" class="os-win"> <![endif]-->
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    
+    <!-- JQUERY LIBRARY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    
+    <!-- BOOTSTRAP LIBRARY -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+    <!-- ANGULARJS LIBRARY -->
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+    
+    <!-- GOOGLE FONT OXYGEN -->
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    
+    <!-- STYLESHEETS AND MEDIA QUERIES -->
+    <link rel="stylesheet" type="text/css" href="CSS/expstyle.css">
+    <link rel="stylesheet" type="text/css" href="CSS/expqueries.css">
+    
+    <!-- FONT AWESOME ICONS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    
+    <!-- IONICONS ICONS -->
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    
+    <title>Zhijin Caves/Explore Our Nature Park</title>
+</head>
+
+<body ng-app="picApp">
+
+ <!-- HERO WELCOME PAGE (Each time page loads, picture and header are different!) -->
+    <div ng-controller="picAppCtrl"> 
+    <header id="slideshow" ng-style="bgPicTic"> 
+        <a href="http://www.dominick-caponi.com/zhijin-global-geopark" data-toggle="tooltip" title="Back to Rectption Page"> <!-- Pictures changed by javaScript depending on tab selected -->
+        <div class="heroText"> 
+            <h1 id="expimgTxt">Reserve Your Tour</h1>
+            <p class="subTxt">Zhijindong Cave Global Geopark</p> 
+        </div> 
+        </a>
+    </header>
+    </div>
+    
+    <!--Ticket Container-->
+    <div class="tab-content">
+        <div class="article-container">
+            <div class="articlePic">
+                <img src="Images/article/newLook.jpg" class="panelThumb">
+            </div>
+            <h2 class="article-title tic-title">Zhijin Cave Tour And Museum</h2>
+            <article class="ticDesc">
+                <h4 class="price"><i class="fa fa-usd"></i>18.50 USD &nbsp; <i class="fa fa-jpy"></i> 120.00 CNY</h4>
+                <h4 class="special" style="margin-bottom:10px;"><i class="fa fa-fire"></i>&nbsp;Most Popular</h4>
+                <p>Zhijin basic tour package includes the cave tour lasting about 2 hours and a pass to the museum. Perfect for families and curious travelers alike!</p>
+            </article>
+            <br>
+            <button class="btn btn-default purchase">Purcase Tickets</button>
+        </div>
+    </div>
+    
+        <!--Ticket Container-->
+    <div class="tab-content">
+        <div class="article-container">
+            <div class="articlePic">
+                <img src="Images/article/newLook.jpg" class="panelThumb">
+            </div>
+            <h2 class="article-title tic-title">Premium Cave Tour And Museum</h2>
+            <article class="ticDesc">
+                <h4 class="price"><i class="fa fa-usd"></i>TBD USD &nbsp; <i class="fa fa-jpy"></i> TBD CNY</h4>
+                <h4 class="special" style="margin-bottom:10px;"><i class="fa fa-star"></i>&nbsp;Best Value</h4>
+                <p>Insert Description of the tour</p>
+            </article>
+            <br>
+            <button class="btn btn-default purchase">Purcase Tickets</button>
+        </div>
+    </div>
+    
+            <!--Ticket Container-->
+    <div class="tab-content">
+        <div class="article-container">
+            <div class="articlePic">
+                <img src="Images/article/newLook.jpg" class="panelThumb">
+            </div>
+            <h2 class="article-title tic-title">Another Cave Tour And Museum</h2>
+            <article class="ticDesc">
+                <h4 class="price"><i class="fa fa-usd"></i>TBD USD &nbsp; <i class="fa fa-jpy"></i> TBD CNY</h4>
+                <p>Insert Description of the tour</p>
+            </article>
+            <br>
+            <button class="btn btn-default purchase">Purcase Tickets</button>
+        </div>
+    </div>
+    
+    
+        <!-- JAVASCRIPT FOR INTERACTIONS -->
+<script src="javaScript/expeffects.js"></script>
+    </body>
+</html>
